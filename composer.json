@@ -1,0 +1,20 @@
+{
+    "name": "Fiamma06/PhpZabbixApi",
+    "type": "library",
+    "description": "Adapted library for Yii2",
+    "keywords": ["zabbix Api", "zabbix", "yii2"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kisten Alexander"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "ZabbixAPI": "src/"
+        }
+    }
+}
