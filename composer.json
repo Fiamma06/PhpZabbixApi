@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "fiamma06\\zabbix": "build/2.4/",
+            "fiamma06\\zabbix": "build/2.4/"
         }
     }
 }
