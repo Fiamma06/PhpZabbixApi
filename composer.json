@@ -1,20 +1,21 @@
 {
     "name": "fiamma06/yii2-zabbix-api",
-    "type": "library",
     "description": "PhpZabbixAPI library for Yii2",
-    "keywords": ["zabbix Api", "zabbix", "yii2"],
+    "type": "yii2-extension",
+    "keywords": ["yii2","library","zabbix","api"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Kisten Alexander"
+            "name": "Kisten Alexander",
+            "email": "kistenalex@gamil.com"
         }
     ],
     "require": {
-        "php": ">=5.3.3"
+        "yiisoft/yii2": "*"
     },
     "autoload": {
-        "psr-0": {
-            "fiamma06\\yii2-zabbix-api": "build/"
+        "psr-4": {
+            "fiamma06\\zabbix\\": "build/"
         }
     }
 }
