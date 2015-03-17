@@ -15,8 +15,13 @@
     },
     "autoload": {
         "psr-4": {
-            "fiamma06\\zabbix\\": "build/2.4/",
-	    "fiamma06\\zabbix\\": ""
+	        "fiamma06\\zabbix\\": "",
+            "files" : [
+                "build/2.4/ZabbixApiAbstract.php",
+                "build/2.4/ZabbixApi.php",
+                "ZabbixComponent.php"
+            ]
         }
     }
 }
+
