@@ -1,6 +1,6 @@
 <?php
 
-namespace fiamma06\zabbix\2.4;
+namespace fiamma06\zabbix;
 
 /**
  * @file    ZabbixApi.class.php
