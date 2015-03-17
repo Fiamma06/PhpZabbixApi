@@ -1,7 +1,4 @@
 <?php
-
-namespace fiamma06\zabbix;
-
 /**
  * @file    ZabbixApi.class.php
  * @brief   Class file for the implementation of the class ZabbixApi.

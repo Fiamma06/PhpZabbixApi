@@ -14,8 +14,9 @@
         "yiisoft/yii2": "*"
     },
     "autoload": {
-        "psr-4": {
-            "fiamma06\\zabbix\\": "build/"
+        "psr-0": {
+            "fiamma06\\zabbix\\2.2\\": "build/2.2/",
+	    "fiamma06\\zabbix\\2.4\\": "build/2.4/",
         }
     }
 }

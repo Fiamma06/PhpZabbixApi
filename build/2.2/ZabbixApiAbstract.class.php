@@ -1,7 +1,4 @@
 <?php
-
-namespace fiamma06\zabbix;
-
 /**
  * @file        ZabbixApiAbstract.class.php
  *
