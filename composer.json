@@ -1,7 +1,7 @@
 {
-    "name": "Fiamma06/yii2-zabbix-api",
+    "name": "fiamma06/yii2-zabbix-api",
     "type": "library",
-    "description": "Adapted ZabbixAPI library for Yii2",
+    "description": "PhpZabbixAPI library for Yii2",
     "keywords": ["zabbix Api", "zabbix", "yii2"],
     "license": "MIT",
     "authors": [
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-0": {
-            "ZabbixAPI": "src/"
+            "ZabbixAPI": "/"
         }
     }
 }
