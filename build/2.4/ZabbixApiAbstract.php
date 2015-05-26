@@ -2,7 +2,7 @@
 
 namespace fiamma06\zabbix;
 
-use yii\base\Exception;
+use fiamma06\zabbix\ZabbixException as Exception;
 
 /**
  * @file        ZabbixApiAbstract.class.php
@@ -248,7 +248,7 @@ abstract class ZabbixApiAbstract
         // get file handler
         $fileHandler = @fopen($this->getApiUrl(), 'rb', false, $streamContext);
         if(!$fileHandler)
-            throw new Exception('Could not connect to "'.$this->getApiUrl().'"');
+            throw new Exception('Could not connect to "'.$this->getApiUrl().'"', 1);
 
         // get response
         $this->response = @stream_get_contents($fileHandler);
@@ -259,16 +259,16 @@ abstract class ZabbixApiAbstract
 
         // response verification
         if($this->response === FALSE)
-            throw new Exception('Could not read data from "'.$this->getApiUrl().'"');
+            throw new Exception('Could not read data from "'.$this->getApiUrl().'"', 2);
 
         // decode response
         $this->responseDecoded = json_decode($this->response);
 
         // validate response
         if(!is_object($this->responseDecoded) && !is_array($this->responseDecoded))
-            throw new Exception('Could not decode JSON response.');
+            throw new Exception('Could not decode JSON response.', 3);
         if(array_key_exists('error', $this->responseDecoded))
-            throw new Exception('API error '.$this->responseDecoded->error->code.': '.$this->responseDecoded->error->data);
+            throw new Exception('API error '.$this->responseDecoded->error->code.': '.$this->responseDecoded->error->data, 4);
 
         // return response
         if($resultArrayKey && is_array($this->responseDecoded->result))

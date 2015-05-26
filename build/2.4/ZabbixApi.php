@@ -27,6 +27,7 @@ namespace fiamma06\zabbix;
  * @author      confirm IT solutions GmbH, Rathausstrase 14, CH-6340 Baar
  */
 
+require 'ZabbixException.php';
 require 'ZabbixApiAbstract.php';
 
 /**
