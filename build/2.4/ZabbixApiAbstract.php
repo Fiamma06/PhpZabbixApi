@@ -244,7 +244,7 @@ abstract class ZabbixApiAbstract
         )));
 
         // get file handler
-        $fileHandler = fopen($this->getApiUrl(), 'rb', false, $streamContext);
+        $fileHandler = @fopen($this->getApiUrl(), 'rb', false, $streamContext);
         if(!$fileHandler)
             throw new Exception('Could not connect to "'.$this->getApiUrl().'"');
 
