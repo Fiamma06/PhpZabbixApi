@@ -2,7 +2,7 @@
 
 namespace fiamma06\zabbix;
 
-use \Exception;
+use yii\base\Exception;
 
 /**
  * @file        ZabbixApiAbstract.class.php
