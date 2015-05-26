@@ -2,8 +2,6 @@
 
 namespace fiamma06\zabbix;
 
-use yii\base\Exception;
-
 /**
  * @file    ZabbixApi.class.php
  * @brief   Class file for the implementation of the class ZabbixApi.
